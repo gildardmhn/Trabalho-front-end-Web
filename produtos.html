@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Galeria de produtos</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="js/jquery-ui.css">
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("navbar");
+		    if (x.className === "navbar") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "navbar";
+		    }
+		}
+	</script>
+	<script>
+		window.onload=function(){
+			$("#cache").hide();
+
+			$("#show").click(function(){
+				$("#cache").show();
+				$("#show").hide();
+			});
+			$("#hide").click(function(){
+				$("#cache").hide();
+				/*$("#show").show();*/
+			});
+		}
+	</script>
+</head>
+<body>
+
+	<div class="navbar" id="navbar">
+	  <a href="index.html">Página inicial</a>
+	  <a href="produtos.html">Produtos</a>
+	  <a href="contato.html">Contato</a>
+	  <a href="Sobre.html">Sobre</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<div class="header">
+		<h1>Nossos produtos</h1>
+	</div>
+	<div class="row">
+		
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/coupe_du_monde.jpg">
+						<img src="img/coupe_du_monde.jpg" style="width:100%">
+					</a>
+					<div class="desc">Taça Copa do Mundo 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>800,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/algerie.jpg">
+						<img src="img/algerie.jpg" style="width:100%">
+					</a>
+					<div class="desc"> Camisa Argélia 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/angleterre.jpg">
+						<img src="img/angleterre.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Inglaterra 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/argentine.jpg">
+						<img src="img/argentine.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Argentina 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,79 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/australie.jpg">
+						<img src="img/australie.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Australia 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>209,99 R$</span></button>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+	<div class="row">
+		
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/ballon.jpg">
+						<img src="img/ballon.jpg" style="width:100%">
+					</a>
+					<div class="desc">Bola Oficial Adidas da Liga dos Campeões 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>50,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/barca.jpg">
+						<img src="img/barca.jpg" style="width:100%">
+					</a>
+					<div class="desc"> Home Kit Nike Oficial Fc Barcelona 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/messi.jpg">
+						<img src="img/messi.jpg" style="width:100%">
+					</a>
+					<div class="desc">Bonequinho Leo Messi</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>35,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/champions.jpg">
+						<img src="img/champions.jpg" style="width:100%">
+					</a>
+					<div class="desc">Taça Liga dos Campẽos</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>695,79 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/nemesis.jpg">
+						<img src="img/nemesis.jpg" style="width:100%">
+					</a>
+					<div class="desc">Chuteira Leo Messi Nemeziz</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>209,99 R$</span></button>
+					</div>
+				</div>
+			</div>	
+			<input type="submit" value="Mais produtos" id="show"></input>	
+	</div>
+	
+
+
+
+
+	<div id="cache">
+	<div class="row">
+		
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/belgique.jpg">
+						<img src="img/belgique.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Belgica 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/bresil.jpg">
+						<img src="img/bresil.jpg" style="width:100%">
+					</a>
+					<div class="desc"> Camisa Brasil 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/cameroon.jpg">
+						<img src="img/cameroon.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Camarões 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>235,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/egypte.jpg">
+						<img src="img/egypte.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Egito 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,79 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/espagne.jpg">
+						<img src="img/espagne.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Espanha 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>209,99 R$</span></button>
+					</div>
+				</div>
+			</div>		
+		</div>
+
+	<div class="row">
+		
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/france.jpg">
+						<img src="img/france.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa França 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/maroc.jpg">
+						<img src="img/maroc.jpg" style="width:100%">
+					</a>
+					<div class="desc"> Camisa Marrocos 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/mexique.jpg">
+						<img src="img/mexique.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Mexico 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>235,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/nigeria.jpg">
+						<img src="img/nigeria.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Nigeria 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>295,79 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/portugal.jpg">
+						<img src="img/portugal.jpg" style="width:100%">
+					</a>
+					<div class="desc">Camisa Portugal 2017 2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>209,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<!--<button id="hide">Menos produtos</button>-->		
+		</div>
+	</div>
+
+	<div class="footer">
+		<p> +55(88)997078612 Maio 2018 Gildard Myehouenou</p>
+	</div>	
+</body>
+</html>

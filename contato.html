@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contato</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="js/jquery-ui.css">
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("navbar");
+		    if (x.className === "navbar") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "navbar";
+		    }
+		}
+	</script>
+
+	<script>
+		$(document).ready(function(){
+		  $('.phone_with_ddd').mask('(00)0 0000-0000');
+		});
+	</script>
+</head>
+<body>
+
+
+	<div class="navbar" id="navbar">
+	  <a href="index.html">Página inicial</a>
+	  <a href="produtos.html">Produtos</a>
+	  <a href="contato.html">Contato</a>
+	  <a href="Sobre.html">Sobre</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<div class="header">
+		<h1>cadastrar-se</h1>
+	</div>
+
+	<div class="row">
+		<div class="column50">
+			<form class="w3-container w3-card-4 w3-white">
+				<label for="nome">Nome</label>
+				<input class="w3-input w3-border w3-round-xxlarge" type="text" name="nome" placeholder="Digite o seu nome">
+				<label for="email">E-mail</label>
+				<input class="w3-input w3-border w3-round-xxlarge" type="text" name="email" placeholder="fulano@algo.com">
+				<label for="numero">Número</label>
+				<input class="w3-input w3-border w3-round-xxlarge phone_with_ddd" type="text" name="numero" placeholder="(00)9 0000-0000">
+				<label for="mensagem">Mensagem</label><br>
+				<textarea class="w3-textarea" placeholder="Digite aqui sua mensagem"></textarea>
+				<input type="submit" name="enviar" value="Enviar">
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<p> +55(88)997078612 Maio 2018 Gildard Myehouenou</p>
+	</div>	
+</body>
+</html>

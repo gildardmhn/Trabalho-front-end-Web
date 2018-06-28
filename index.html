@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página Inicial</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("navbar");
+		    if (x.className === "navbar") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "navbar";
+		    }
+		}
+	</script>
+</head>
+<body>
+
+	<div class="navbar" id="navbar">
+	  <a href="index.html">Página inicial</a>
+	  <a href="produtos.html">Produtos</a>
+	  <a href="contato.html">Contato</a>
+	  <a href="Sobre.html">Sobre</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<div class="header">
+		<h1> Promoções do dia</h1>
+		<p>Aproveite das promoções do dia e faça suas compras.</p>
+	</div>
+
+	<div class="row">
+		
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/ballon.jpg">
+						<img src="img/ballon.jpg" style="width:100%">
+					</a>
+					<div class="desc">Bola Oficial Adidas da Liga dos Campeões 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>50,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/barca.jpg">
+						<img src="img/barca.jpg" style="width:100%">
+					</a>
+					<div class="desc"> Home Kit Nike Oficial Fc Barcelona 2017/2018</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>250,69 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/messi.jpg">
+						<img src="img/messi.jpg" style="width:100%">
+					</a>
+					<div class="desc">Bonequinho Leo Messi</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>35,99 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/champions.jpg">
+						<img src="img/champions.jpg" style="width:100%">
+					</a>
+					<div class="desc">Taça Liga dos Campẽos</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>695,79 R$</span></button>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="gallery">
+					<a target="_blank" href="img/nemesis.jpg">
+						<img src="img/nemesis.jpg" style="width:100%">
+					</a>
+					<div class="desc">Chuteira Leo Messi Nemeziz</div>
+					<div class="buttonHolder">
+						<button type="submit"><span>209,99 R$</span></button>
+					</div>
+				</div>
+			</div>		
+		</div>
+	
+	<div class="footer">
+		<p> +55(88)997078612 Maio 2018 Gildard Myehouenou</p>
+	</div>
+</body>
+</html>

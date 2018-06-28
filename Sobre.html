@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sobre</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="js/jquery-ui.css">
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+		function myFunction() {
+		    var x = document.getElementById("navbar");
+		    if (x.className === "navbar") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "navbar";
+		    }
+		}
+	</script>
+	  <script>
+	  $( function() {
+	    $( "#accordion" ).accordion({
+	      heightStyle: "content"
+	    });
+	  } );
+	  </script>
+</head>
+<body>
+	<div class="navbar" id="navbar">
+	  <a href="index.html">Página inicial</a>
+	  <a href="produtos.html">Produtos</a>
+	  <a href="contato.html">Contato</a>
+	  <a href="Sobre.html">Sobre</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<div class="header">
+		
+	</div>
+
+	<div class="row">
+		<img src="img/logo.png">
+		<div id="accordion">
+		  <h3>Quem somos?</h3>
+		  <div>
+		    <p>
+		    	A SpeedVenda é uma empresa privada criada por Gildard Myehouenou nos anos 2000.<br>
+		    	Ela vende produtos de todos os tipos, mas principalmente produtos em relação com o maior esporte do <br>mundo: o futebol. Nos começamos pelo mercado Brasileiro e hoje estamos presentes em mais de 6 paises no mundo.
+		    </p>
+		  </div>
+		  <h3>Missão</h3>
+		  <div>
+		  	<p>
+		  		Se tornar o líder do mercado das vendas de produtos derivados do futebol no mundo.
+		  	</p>
+		  </div>
+
+		  <h3>Visao</h3>
+		  <div>
+		  	<p>
+		  		Temos como objetivo de se tornal a maior empresa de venda online de produtos derivados de futebol até o ano 2022.
+		  	</p>
+		  </div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p> +55(88)997078612 Maio 2018 Gildard Myehouenou</p>
+	</div>
+</body>
+</html>
